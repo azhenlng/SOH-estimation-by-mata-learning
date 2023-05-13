@@ -1,0 +1,42 @@
+{
+  "norm": "chuneng",
+  "epochs": 10,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "model_type": "gcn",
+  "cosine_factor": 0.2,
+  "task_type": "regression",
+
+
+  "partition": false,
+  "partition_num": 2,
+  "save_model_path":"./maml_save", 
+  "class_num": 7,
+  "kernel_num": 50,
+  "last_kernel_num": 5,
+  "kernel_sizes": [3,5,7,9,11,13],
+  "drop_out": 0.3,
+
+  "window_len": 600,  
+  "interval": 50,
+  "jobs": 12,
+  "ram": true,
+  "is_interpolate": false, 
+  "min_length": 30,
+  "sigvolt_nums": 55,
+  "cluster_nums": 1,
+  "window_limit": 1,  
+  "interpolate": -1,
+    
+  "inner_step": 3,
+  "inner_lr": 0.001,
+  "study_name": "NCM_NCA",  
+  "optuna": false,
+  "exp_data": true,
+  "train_test_split_ratio": 0.8,
+  "data_path":{"NE":"/home/wangchen/NEall",
+               "NCA":"/data/log/yangqi/NatureCom/NCA",
+               "NCM":"/data/log/yangqi/NatureCom/NCM",
+               "NCM_NCA":"/data/log/yangqi/NatureCom/NCM_NCA"},
+  "device": "cuda"
+}

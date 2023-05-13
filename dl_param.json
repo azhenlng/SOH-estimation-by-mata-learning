@@ -1,0 +1,38 @@
+{
+  "norm": "chuneng",
+  "epochs": 10,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "model_type": "gcn",
+  "cosine_factor": 0.2,
+  "task_type": "regression",
+
+
+  "partition": false,
+  "partition_num": 2,
+  "save_model_path":"./ft_save",  
+  "previous_model_path":"./maml_save", 
+  "class_num": 7,
+  "kernel_num": 50,
+  "last_kernel_num": 9,
+  "kernel_sizes": [3,5,7,9,11,13],
+  "drop_out": 0.4,
+
+  "window_len":200,  
+  "interval": 50,
+  "jobs": 12,
+  "ram": true,
+  "is_interpolate": false, 
+  "min_length": 30,
+  "sigvolt_nums": 55,
+  "cluster_nums": 1,
+  "window_limit": 1,  
+  "interpolate": -1,  
+
+  "study_name": "Tshdl",  
+  "optuna": true,
+  "exp_data": true,
+  "train_num": 2000,
+  "data_path":"/home/wangchen/Tshall",
+  "device": "cuda"
+}
